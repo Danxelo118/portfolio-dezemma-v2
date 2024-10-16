@@ -695,18 +695,19 @@
   
   .hero .container {
     position: relative;
+    text-align: center;
     z-index: 3;
   }
   
   .hero h2 {
     margin: 0;
-    font-size: 64px;
+    font-size: 90px;
     font-weight: 700;
   }
   
   .hero p {
     margin: 5px 0 0 0;
-    font-size: 26px;
+    font-size: 40px;
   }
   
   .hero p span {
