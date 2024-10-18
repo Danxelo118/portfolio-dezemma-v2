@@ -23,7 +23,7 @@
     --nav-mobile-background-color: #1a1a1a; /* Used as the background color for mobile navigation menu */
     --nav-dropdown-background-color: #B7B5B3; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
     --nav-dropdown-color: #fafafa; /* Used for navigation links of the dropdown items in the navigation menu. */
-    --nav-dropdown-hover-color: #E1BC29; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+    --nav-dropdown-hover-color: #B7B5B3; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
   }
   
   /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -695,25 +695,25 @@
   
   .hero .container {
     position: relative;
-    text-align: center;
     z-index: 3;
   }
   
   .hero h2 {
     margin: 0;
-    font-size: 90px;
+    font-size: 64px;
     font-weight: 700;
   }
   
   .hero p {
     margin: 5px 0 0 0;
-    font-size: 40px;
+    font-size: 26px;
   }
   
   .hero p span {
     letter-spacing: 1px;
     border-bottom: 2px solid var(--accent-color);
   }
+  
   
   .hero .social-links {
     margin-top: 25px;
@@ -1048,7 +1048,7 @@
   # Services Section
   --------------------------------------------------------------*/
   .services .service-item {
-    background-color: #544e4e;
+    background-color: var(--default-color);
     color: var(--background-color);
     text-align: center;
     padding: 80px 20px;
@@ -1060,7 +1060,7 @@
     margin: 0 auto;
     width: 64px;
     height: 64px;
-    background: var(--accent-color);
+    background: var(--background-color);
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -1071,7 +1071,7 @@
   }
   
   .services .service-item .icon i {
-    color: var(--background-color);
+    color: var(--contrast-color);
     font-size: 28px;
     transition: ease-in-out 0.3s;
   }
@@ -1083,7 +1083,7 @@
     top: -8px;
     height: 100%;
     width: 100%;
-    background: color-mix(in srgb, var(--accent-color), transparent 80%);
+    background: color-mix(in srgb, var(--background-color), transparent 50%);
     border-radius: 5px;
     transition: all 0.3s ease-out 0s;
     transform: translateZ(-1px);
@@ -1112,11 +1112,11 @@
   }
   
   .services .service-item:hover .icon i {
-    color: var(--accent-color);
+    color: var(--background-color);
   }
   
   .services .service-item:hover .icon::before {
-    background: color-mix(in srgb, var(--background-color), transparent 70%);
+    background: color-mix(in srgb, var(--background-color), transparent 20%);
   }
   
   .services .service-item:hover h3,
@@ -1128,9 +1128,9 @@
   # Service Details Section
   --------------------------------------------------------------*/
   .service-details .services-list {
-    background-color: var(--surface-color);
+    background-color: var(--default-color);
     padding: 10px 30px;
-    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    border: 1px solid color-mix(in srgb, var(--background-color), transparent 90%);
     margin-bottom: 20px;
   }
   
@@ -1138,20 +1138,21 @@
     display: block;
     line-height: 1;
     padding: 8px 0 8px 15px;
-    border-left: 3px solid color-mix(in srgb, var(--default-color), transparent 70%);
+    border-left: 3px solid color-mix(in srgb, var(--background-color), transparent 70%);
     margin: 20px 0;
-    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    color: color-mix(in srgb, var(--accent-color), transparent 20%);
     transition: 0.3s;
   }
   
   .service-details .services-list a.active {
-    color: var(--heading-color);
+    color: var(--background-color);
     font-weight: 700;
     border-color: var(--accent-color);
   }
   
   .service-details .services-list a:hover {
-    border-color: var(--accent-color);
+    border-color: var(--background-color);
+    color: var(--background-color);
   }
   
   .service-details .services-img {
