@@ -535,7 +535,7 @@
     right: 15px;
     bottom: -15px;
     z-index: 99999;
-    background-color: var(--accent-color);
+    background-color: var(--contrast-color);
     width: 44px;
     height: 44px;
     border-radius: 50px;
@@ -544,12 +544,16 @@
   
   .scroll-top i {
     font-size: 24px;
-    color: var(--contrast-color);
+    color: var(--background-color);
     line-height: 0;
+  }
+
+  .scroll-top i:hover {
+    color: var(--contrast-color);
   }
   
   .scroll-top:hover {
-    background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+    background-color: color-mix(in srgb, var(--accent-color), transparent 5%);
     color: var(--contrast-color);
   }
   
@@ -774,6 +778,7 @@
   .hero button a {
     color: var(--contrast-color);
     font-size: 1em;
+    font-weight: 600;
   }
   .hero button:hover {
     background-color: var(--accent-color);
@@ -1092,6 +1097,7 @@
   # Services Section
   --------------------------------------------------------------*/
   .services .service-item {
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.8);
     background-color: var(--default-color);
     color: var(--background-color);
     text-align: center;
@@ -1423,8 +1429,8 @@
 
 
   .contact .info-item .icon {
-    color: var(--contrast-color);
-    background-color: var(--accent-color);
+    color: var(--background-color);
+    background-color: var(--default-color);
     width: 56px;
     height: 56px;
     font-size: 24px;
@@ -1454,7 +1460,7 @@
     line-height: 1;
     margin: 4px 6px 0 0;
     transition: 0.3s;
-    color: color-mix(in srgb, var(--default-color), transparent 50%);
+    color: color-mix(in srgb, var(--default-color), transparent 5%);
   }
   
   .contact .info-item .social-links a:hover {
@@ -1498,14 +1504,21 @@
   }
   
   .contact .php-email-form button[type=submit] {
-    color: var(--contrast-color);
-    background: var(--accent-color);
+    color: var(--background-color);
+    background: var(--default-color);
     border: 0;
     padding: 10px 30px;
     transition: 0.4s;
     border-radius: 50px;
   }
   
+
+  .contact .info-item .icon:hover {
+    color: var(--default-color);
+    background-color: var(--accent-color);
+  }
+
   .contact .php-email-form button[type=submit]:hover {
     background: color-mix(in srgb, var(--accent-color), transparent 20%);
+    color: var(--contrast-color);
   }
