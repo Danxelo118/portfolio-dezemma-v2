@@ -865,7 +865,7 @@
   # Skills Section
   --------------------------------------------------------------*/
   .skills .progress {
-    height: 60px;
+    height: 90px;
     display: block;
     background: none;
     border-radius: 0;
@@ -877,7 +877,7 @@
     margin: 0 0 6px 0;
     text-transform: uppercase;
     display: block;
-    font-weight: 600;
+    font-weight: 500;
     font-family: var(--heading-font);
   }
   
@@ -902,12 +902,12 @@
   # Interests Section
   --------------------------------------------------------------*/
   .interests .features-item {
-    background-color: var(--surface-color);
+    background-color: var(--background-color);
     display: flex;
     align-items: center;
     padding: 20px;
     transition: 0.3s;
-    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    border-radius: 10px;
     position: relative;
   }
   
@@ -918,7 +918,7 @@
   }
   
   .interests .features-item h3 {
-    font-weight: 700;
+    font-weight: 500;
     margin: 0;
     padding: 0;
     line-height: 1;
@@ -931,16 +931,19 @@
   }
   
   .interests .features-item:hover {
-    border-color: var(--accent-color);
+    border-color: var(--background-color);
+    background-color: var(--contrast-color);
   }
   
   .interests .features-item:hover h3 a {
-    color: var(--accent-color);
+    color: var(--background-color);
+    text-align: center;
+    font-size: 20px;
   }
   
   /*--------------------------------------------------------------
   # Testimonials Section
-  --------------------------------------------------------------*/
+
   .testimonials .testimonials-carousel,
   .testimonials .testimonials-slider {
     overflow: hidden;
@@ -1023,7 +1026,9 @@
   .testimonials .swiper-pagination .swiper-pagination-bullet-active {
     background-color: var(--accent-color);
   }
-  
+    --------------------------------------------------------------*/
+
+
   /*--------------------------------------------------------------
   # Resume Section
   --------------------------------------------------------------*/
@@ -1405,12 +1410,8 @@
   }
   
   /*--------------------------------------------------------------
-  # Starter Section Section
-  --------------------------------------------------------------*/
-  .starter-section {
-    /* Add your styles here */
-  }
-  
+
+
   /*--------------------------------------------------------------
   # Contact Section
   --------------------------------------------------------------*/
@@ -1419,6 +1420,8 @@
     padding: 20px 30px;
   }
   
+
+
   .contact .info-item .icon {
     color: var(--contrast-color);
     background-color: var(--accent-color);
