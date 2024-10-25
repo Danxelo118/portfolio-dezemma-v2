@@ -4,6 +4,7 @@
     --default-font: "Liberation Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --heading-font: "Poppins",  sans-serif;
     --nav-font: "Roboto",  sans-serif;
+    --font-space: "Space Grotesk", sans-serif;
   }
   
   /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -52,7 +53,7 @@
   body {
     color: var(--default-color);
     background-color: var(--background-color);
-    font-family: var(--default-font);
+    font-family: var(--font-space);
   }
   
   a {
@@ -135,26 +136,16 @@
     --background-color: rgba(0, 0, 0, 0);
     color: var(--default-color);
     background-color: var(--background-color);
-    padding: 15px 0;
+    padding: 0 55px;
     transition: all 0.5s;
     z-index: 997;
   }
   
-  .header .logo {
-    line-height: 1;
-  }
   
-  .header .logo img {
+  .logo {
     max-width: 15%;
-    margin-right: 8px;
   }
   
-  .header .logo h1 {
-    font-size: 30px;
-    margin: 0;
-    font-weight: 700;
-    color: var(--heading-color);
-  }
   
   .scrolled .header {
     box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
@@ -201,7 +192,7 @@
       color: var(--nav-color);
       font-size: 15px;
       padding: 0 2px;
-      font-family: var(--heading-font);
+      font-family: var(--font-space);
       font-weight: 400;
       display: flex;
       align-items: center;
@@ -337,7 +328,7 @@
     .navmenu a:focus {
       color: var(--nav-dropdown-color);
       padding: 10px 20px;
-      font-family: var(--nav-font);
+      font-family: var(--font-space);
       font-size: 17px;
       font-weight: 500;
       display: flex;
@@ -716,7 +707,7 @@
   
   .hero p {
     margin: 5px 0 0 0;
-    font-family: var(--heading-font);
+    font-family: var(--font-space);
     font-size: 30px;
   }
   
@@ -787,6 +778,8 @@
     0 0 200px var(--accent-color);
   }
 
+
+  
 
 
 
@@ -862,7 +855,7 @@
   .stats .stats-item p {
     padding: 0;
     margin: 0;
-    font-family: var(--heading-font);
+    font-family: var(--font-space);
     font-size: 16px;
   }
   
@@ -883,7 +876,7 @@
     text-transform: uppercase;
     display: block;
     font-weight: 500;
-    font-family: var(--heading-font);
+    font-family: var(--font-space);
   }
   
   .skills .progress .skill .val {
@@ -921,6 +914,7 @@
     padding-right: 10px;
     line-height: 0;
   }
+
   
   .interests .features-item h3 {
     font-weight: 500;
@@ -1541,6 +1535,33 @@
     font-weight: 600;
   }
   .contact button:hover {
+    background-color: var(--accent-color);
+    box-shadow: 0 0 55px var(--accent-color),
+    0 0 25px var(--accent-color), 0 0 50px var(--accent-color),
+    0 0 200px var(--accent-color);
+  }
+
+
+
+
+
+  .col-md-12 button {
+    margin: 40px 0 0 10px;
+    box-shadow: 0 0 5px var(--accent-color),
+    0 0 25px var(--accent-color);
+    background: color-mix(in srgb, var(--accent-color), transparent 70%);
+    border: 0;
+    padding: 10px 30px;
+    text-align: center;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+  .col-md-12 button a {
+    color: var(--contrast-color);
+    font-size: 1em;
+    font-weight: 600;
+  }
+  .col-md-12 button:hover {
     background-color: var(--accent-color);
     box-shadow: 0 0 55px var(--accent-color),
     0 0 25px var(--accent-color), 0 0 50px var(--accent-color),
