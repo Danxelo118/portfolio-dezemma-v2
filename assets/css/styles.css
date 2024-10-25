@@ -136,7 +136,6 @@
     --background-color: rgba(0, 0, 0, 0);
     color: var(--default-color);
     background-color: var(--background-color);
-    padding: 0 55px;
     transition: all 0.5s;
     z-index: 997;
   }
