@@ -238,6 +238,7 @@
     .navmenu .dropdown ul {
       margin: 0;
       padding: 10px 0;
+      text-align: center;
       background: var(--nav-dropdown-background-color);
       display: block;
       position: absolute;
@@ -257,6 +258,7 @@
   
     .navmenu .dropdown ul a {
       padding: 10px 20px;
+      text-align: center;
       font-size: 15px;
       text-transform: none;
       color: var(--nav-dropdown-color);
@@ -299,6 +301,7 @@
       font-size: 28px;
       line-height: 0;
       margin-right: 10px;
+      text-align: center;
       cursor: pointer;
       transition: color 0.3s;
     }
@@ -310,15 +313,17 @@
   
     .navmenu ul {
       display: none;
-      list-style: none;
+      align-items: center;
       position: absolute;
       inset: 60px 20px 20px 20px;
-      padding: 10px 0;
-      margin: 0;
+      padding: 10px 10px;
+      margin: auto;
       border-radius: 6px;
       background-color: var(--nav-mobile-background-color);
       border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-      box-shadow: none;
+      box-shadow: 0 0 55px var(--accent-color),
+      0 0 25px var(--accent-color), 0 0 50px var(--accent-color),
+      0 0 200px var(--accent-color);
       overflow-y: auto;
       transition: 0.3s;
       z-index: 9998;
@@ -327,13 +332,12 @@
     .navmenu a,
     .navmenu a:focus {
       color: var(--nav-dropdown-color);
-      padding: 10px 20px;
+      padding: 40px 30px;
       font-family: var(--font-space);
-      font-size: 17px;
-      font-weight: 500;
+      font-size: 18px;
+      font-weight: 200;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       white-space: nowrap;
       transition: 0.3s;
     }
@@ -363,6 +367,7 @@
     .navmenu .active,
     .navmenu .active:focus {
       color: var(--nav-dropdown-hover-color);
+      font-family: var(--font-space);
     }
   
     .navmenu .active i,
@@ -637,7 +642,6 @@
   
   .section-title h2 {
     font-size: 14px;
-    animation: up-down 2s ease-in-out infinite alternate-reverse both;
     font-weight: 500;
     padding: 0;
     line-height: 1px;
@@ -704,6 +708,7 @@
     font-size: 100px;
     font-family: var(--heading-font);
     font-weight: 700;
+    
   }
   
   .hero p {
@@ -1332,6 +1337,7 @@
   .portfolio .portfolio-content .portfolio-info .preview-link:hover,
   .portfolio .portfolio-content .portfolio-info .details-link:hover {
     color: var(--accent-color);
+    
   }
   
   .portfolio .portfolio-content .portfolio-info .details-link {
