@@ -49,7 +49,7 @@
         <ul>
           <li><a href="index.html" class="active">Accueil</a></li>
           <li><a href="./assets/img/daniel-dezemma-cv.pdf">CV</a></li>
-          <li><a href="projets.html">Projets</a></li>
+          <li><a href="#portfolio">Projets</a></li>
           <li><a href="apropos.html">À propos</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -310,94 +310,113 @@
 
    
 
-     <!-- Services Section -->
-     <section id="services" class="services section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Projets</h2>
-        <div><span>Mes</span> <span class="description-title">projets multimédia</span></div>
-      </div><!-- End Section Title -->
+    
 
+
+
+     <!-- Portfolio Section -->
+     <section id="portfolio" class="portfolio section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Aperçu</h2>
+        <div><span>Mes</span> <span class="description-title">projets multimédia</span></div>
+      </div>
       <div class="container">
 
-        <div class="row gy-4">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="bi bi-code-slash"></i>
-              </div>
-              <a href="web.html" class="stretched-link">
-                <h3>Programmation Web</h3>
-              </a>
-              <p>Cliquer pour voir mes projets réalisés en web.</p>
-            </div>
-          </div><!-- End Service Item -->
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">Tout</li>
+            <li data-filter=".filter-web">Programmation web</li>
+            <li data-filter=".filter-montage">Montage vidéo</li>
+            <li data-filter=".filter-3d">Animation 3D</li>
+            <li data-filter=".filter-vr">Réalité virtuellle</li>
+            <li data-filter=".filter-son">Conception sonore</li>
+            <li data-filter=".filter-interac">Installation interactive</li>
+          </ul><!-- End Portfolio Filters -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-film"></i>
-              </div>
-              <a href="montage.html" class="stretched-link">
-                <h3>Montage Vidéo</h3>
-              </a>
-              <p>Cliquer pour voir mes projets réalisés en montage vidéo.</p>
-            </div>
-          </div><!-- End Service Item -->
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="100">
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-badge-3d-fill"></i>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/web-landing-page.png" class="img-fluid" width="900" height="450" alt="">
+                <div class="portfolio-info">
+                  <h4>Landing page</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/web-landing-page.png" title="web 1" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="web.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
               </div>
-              <a href="3d.html" class="stretched-link">
-                <h3>Animation 3D</h3>
-              </a>
-              <p>Cliquer pour voir mes projets réalisés en animation 3D.</p>
-            </div>
-          </div><!-- End Service Item -->
+            </div><!-- End Portfolio Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-headset-vr"></i>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-montage">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/monati.png" class="img-fluid" width="900" height="450" alt="">
+                <div class="portfolio-info">
+                  <h4>Monati</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="https://www.youtube.com/watch?v=V1sonYQYt6Q" title="montage 1" data-gallery="portfolio-gallery-montage" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="montage.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
               </div>
-              <a href="vr.html" class="stretched-link">
-                <h3>Réalité Vituelle</h3>
-              </a>
-              <p>Cliquer pour voir mes projets réalisés en VR.</p>
-            </div>
-          </div><!-- End Service Item -->
+            </div><!-- End Portfolio Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-speaker-fill"></i>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-3d">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/stellar.png" class="img-fluid" width="900" height="450" alt="">
+                <div class="portfolio-info">
+                  <h4>Stellar</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="https://www.youtube.com/watch?v=2vOzVbuyXBA" title="3d 1" data-gallery="portfolio-gallery-3d" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="3d.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
               </div>
-              <a href="sonore.html" class="stretched-link">
-                <h3>Conception Sonore</h3>
-              </a>
-              <p>Cliquer pour voir mes projets réalisés en conception sonore.</p>
-            </div>
-          </div><!-- End Service Item -->
+            </div><!-- End Portfolio Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-projector"></i>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-vr">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/escapism.png" class="img-fluid" width="900" height="450" alt="">
+                <div class="portfolio-info">
+                  <h4>Escapism</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="https://www.youtube.com/watch?v=jfzWsbKjIEo" title="vr 1" data-gallery="portfolio-gallery-vr" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="vr.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
               </div>
-              <a href="interac.html" class="stretched-link">
-                <h3>Installation Interactive</h3>
-              </a>
-              <p>Cliquer pour voir mes projets réalisés en installation interactive.</p>
-            </div>
-          </div><!-- End Service Item -->
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-son">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/micro.png" class="img-fluid" width="900" height="450" alt="">
+                <div class="portfolio-info">
+                  <h4>Micromontage</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="https://www.youtube.com/watch?v=c7YqSlmohrM" title="son 2" data-gallery="portfolio-gallery-son" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="sonore.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-interac">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/install.png" class="img-fluid" width="900" height="450" alt="">
+                <div class="portfolio-info">
+                  <h4>Installation 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="https://www.youtube.com/watch?v=l-tP9m1fqKA" title="interac 2" data-gallery="portfolio-gallery-interac" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="interac.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            
+          </div><!-- End Portfolio Container -->
+
         </div>
 
       </div>
+      
 
-    </section><!-- /Services Section -->
-
+    </section><!-- /Portfolio Section -->
 
     
 

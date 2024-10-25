@@ -200,3 +200,94 @@
   });
 
 })();
+
+
+
+
+/* <!-- Services Section -->
+     <section id="services" class="services section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projets</h2>
+        <div><span>Mes</span> <span class="description-title">projets multimédia</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <a href="web.html" class="stretched-link">
+                <h3>Programmation Web</h3>
+              </a>
+              <p>Cliquer pour voir mes projets réalisés en web.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-film"></i>
+              </div>
+              <a href="montage.html" class="stretched-link">
+                <h3>Montage Vidéo</h3>
+              </a>
+              <p>Cliquer pour voir mes projets réalisés en montage vidéo.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-badge-3d-fill"></i>
+              </div>
+              <a href="3d.html" class="stretched-link">
+                <h3>Animation 3D</h3>
+              </a>
+              <p>Cliquer pour voir mes projets réalisés en animation 3D.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-headset-vr"></i>
+              </div>
+              <a href="vr.html" class="stretched-link">
+                <h3>Réalité Vituelle</h3>
+              </a>
+              <p>Cliquer pour voir mes projets réalisés en VR.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-speaker-fill"></i>
+              </div>
+              <a href="sonore.html" class="stretched-link">
+                <h3>Conception Sonore</h3>
+              </a>
+              <p>Cliquer pour voir mes projets réalisés en conception sonore.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-projector"></i>
+              </div>
+              <a href="interac.html" class="stretched-link">
+                <h3>Installation Interactive</h3>
+              </a>
+              <p>Cliquer pour voir mes projets réalisés en installation interactive.</p>
+            </div>
+          </div><!-- End Service Item -->
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->*/
