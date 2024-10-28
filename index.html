@@ -42,16 +42,25 @@
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-      <a href="index.html">
-      <img src="./assets/img/logo01.png"  class="logo"></a>
+      <a href="index.html"> 
+     <!-- <img src="./assets/img/logo01.png"  class="logo"></a> --> 
+     <a href="index.html" class="logo" id="logo"></a>
       
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" class="active">Accueil</a></li>
           <li><a href="./assets/img/daniel-dezemma-cv.pdf">CV</a></li>
           <li><a href="#portfolio">Projets</a></li>
-          <li><a href="apropos.html">À propos</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+          
+
+          <button id="dark-mode-toggle" onclick="myFunction()" class="rounded-button">
+            <i class="bi bi-moon"></i>
+          </button>
+          
+
+
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -64,9 +73,13 @@
     <!-- Hero Section --> 
     <section id="hero" class="hero section dark-background">
      <!--   <img src="./assets/img/hero002.avif"> -->
+    <!--  <video autoplay loop muted>
+      <source src="./assets/img/vid-stu.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+  </video> -->
       <div class="container" data-aos="zoom-out" data-aos-delay="100">
         <h2>Daniel Dezemma</h2>
-        <p>Je suis <span class="typed" data-typed-items="un étudiant, à la recherche d'un stage"></span><span class="typed-cursor typed-cursor--blink"></span></p>
+        <p>Je suis <span class="typed" data-typed-items="Daniel, Dezemma"></span><span class="typed-cursor typed-cursor--blink"></span></p>
         <button href="">
           <a href="mailto:danieldezemma@gmail.com">Me contacter</a>
         </button>
@@ -80,6 +93,7 @@
         
           
       </div>
+  
 
     </section><!-- /Hero Section -->
 
@@ -418,7 +432,201 @@
 
     </section><!-- /Portfolio Section -->
 
+
+     <!-- About Section -->
+     <section id="about" class="about section">
+       <!-- Section Title -->
+       <div class="container section-title" data-aos="fade-up">
+        <h2>À propos</h2>
+        <div><span>Daniel</span> <span class="description-title">Dezemma</span></div>
+      </div><!-- End Section Title -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/daniel.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <p class="fst-italic py-3">
+              L'échec n'est qu'une opportunité de recommencer la même chose plus intelligemment. -Henry Ford
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Date de naissance:</strong> <span>18 juin 2004</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Diplôme:</strong> <span>DEC en techniques d'intégration multimédia</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Âge:</strong> <span>20</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Courriel:</strong> <span>danieldezemma@gmail.com</span></li>   
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+              Je suis Daniel Dezemma, étudiant en multimédia, animé par la passion de transformer des idées en réalisations concrètes. À travers ce site, je vous invite à découvrir mon parcours, mes compétences, et mes projets, mêlant intégration multimédia, créativité et expertise technique. Mon ambition est de repousser les limites de la création numérique en combinant ingéniosité artistique et précision technique pour offrir des expériences uniques et inspirantes.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    <!-- Interests Section -->
+    <section id="interests" class="interests section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Intérêts</h2>
+        <div><span>Mes</span> <span class="description-title">centres d'intérêts</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="features-item">
+              <i class="bi bi-camera-video"></i>
+              <h3><a href="" class="stretched-link">Cinéma</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="features-item">
+              <i class="bi bi-headphones" ></i>
+              <h3><a href="" class="stretched-link">Musique</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="features-item">
+              <i class="bi bi-dribbble" ></i>
+              <h3><a href="" class="stretched-link">Sport</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="features-item">
+              <i class="bi bi-controller"></i>
+              <h3><a href="" class="stretched-link">Jeux Vidéo</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="features-item">
+              <i class="bi bi-phone" ></i>
+              <h3><a href="" class="stretched-link">Technologie</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="features-item">
+              <i class="bi bi-journals" ></i>
+              <h3><a href="" class="stretched-link">Histoire</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="700">
+            <div class="features-item">
+              <i class="bi bi-book" ></i>
+              <h3><a href="" class="stretched-link">Littérature</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="800">
+            <div class="features-item">
+              <i class="bi bi-clipboard-heart" ></i>
+              <h3><a href="" class="stretched-link">Psychologie</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="900">
+            <div class="features-item">
+              <i class="bi bi-cash-coin" ></i>
+              <h3><a href="" class="stretched-link">Finance</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1000">
+            <div class="features-item">
+              <i class="bi bi-cake2" ></i>
+              <h3><a href="" class="stretched-link">Nourriture</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1100">
+            <div class="features-item">
+              <i class="bi bi-airplane" ></i>
+              <h3><a href="" class="stretched-link">Voyage</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1200">
+            <div class="features-item">
+              <i class="bi bi-chat-right-quote" ></i>
+              <h3><a href="" class="stretched-link">Langues</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Interests Section -->
     
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <div><span>Me</span> <span class="description-title">contacter</span></div>
+      </div>
+
+
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        
+        <div class="row gy-4">
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="icon bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Courriel</h3>
+                <p>danieldezemma@gmail.com</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
+              <i class="icon bi bi-share flex-shrink-0"></i>
+              <div>
+                <h3>Réseaux sociaux</h3>
+                <div class="social-links">
+                  <a href="https://www.linkedin.com/in/daniel-dezemma-bb0a31325/"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://github.com/Danxelo118"><i class="bi bi-github"></i></a>
+                  <a href="https://youtube.com/@danxelo5265?si=OUcayMZypXO7yYnM"><i class="bi bi-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+     
+            <div class="col-md-12 text-center">
+              <button href="mailto:danieldezemma@gmail.com">
+            <a href="mailto:danieldezemma@gmail.com">
+              Me contacter
+            </a>
+          </button>
+            </div>
+
+    </section><!-- /Contact Section -->
 
   </main>
 
@@ -429,7 +637,7 @@
   <footer id="footer" class="footer dark-background">
     <div class="container">
       <h3 class="sitename">Portfolio</h3>
-      <p>L'échec n'est qu'une opportunité de recommencer la même chose plus intelligement. -Henry Ford</p>
+      <p>L'échec n'est qu'une opportunité de recommencer la même chose plus intelligemment. -Henry Ford</p>
       <div class="social-links d-flex justify-content-center">
         <a href="https://www.linkedin.com/in/daniel-dezemma-bb0a31325/"><i class="bi bi-linkedin"></i></a>
         <a href="https://github.com/Danxelo118"><i class="bi bi-github"></i></a>

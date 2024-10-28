@@ -68,6 +68,28 @@
     });
   }
 
+  /** dark mode 
+   */
+
+ const toggleButton = document.getElementById('dark-mode-toggle'); // Your button's ID
+
+toggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode'); // Add your dark mode class
+
+    // Save the preference to local storage
+    if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('dark-mode', 'enabled');
+    } else {
+        localStorage.setItem('dark-mode', 'disabled');
+    }
+});
+
+// Check for the saved preference on page load
+if (localStorage.getItem('dark-mode') === 'enabled') {
+    document.body.classList.add('dark-mode'); // Apply dark mode if previously set
+}
+
+
   /**
    * Scroll top button
    */
@@ -114,7 +136,7 @@
       loop: true,
       typeSpeed: 100,
       backSpeed: 50,
-      backDelay: 2000
+      backDelay: 500
     });
   }
 
