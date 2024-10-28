@@ -180,9 +180,8 @@ body.dark-mode .logo {
 
     /* Round corners for the dark mode toggle button */
 .rounded-button {
-    border-radius: 50%;
     font-size: 40px;
-    background-color: var(--background-color);
+    background-color: transparent;
     color: var(--default-color);
     border: none;
     cursor: pointer;
