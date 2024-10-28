@@ -73,3 +73,73 @@ document.addEventListener('DOMContentLoaded', function () {
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>*/
+
+
+          /*<!-- Skills Section -->
+     <section id="skills" class="skills section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Compétences</h2>
+        <div><span>Mes</span> <span class="description-title">compétences en programmation</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>HTML</span></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" color="black" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>CSS</span></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" color="black" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>JavaScript</span></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" color="black" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>C++</span></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" color="black" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>SQL</span></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" color="black" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>PHP</span></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" color="black" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->*/
