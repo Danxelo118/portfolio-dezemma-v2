@@ -69,23 +69,7 @@
 
   
   
-  /* Round corners for the dark mode toggle button */
-.rounded-button {
-    border-radius: 50%;
-    background-color: var(--background-color);
-    color: var(--default-color);
-    border: none;
-    padding: 0.5rem; /* Optional: adjust for desired button size */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Optional: Button hover effect */
-  .rounded-button:hover {
-    background-color: color-mix(in srgb, var(--accent-color), transparent 25%);
-  }
-  
-  
+
 
   /* Smooth scroll */
   :root {
@@ -146,14 +130,32 @@
     background-size: contain;
     background-repeat: no-repeat;
     width: 40%; 
-    height: 150px; 
-    padding: 0; 
-    margin: 15px; 
-    text-align: center;
+    height: auto; 
+    padding: 20px; 
+    margin: 5px; 
+    padding-top: 10%; 
     cursor: pointer;
+    position: absolute;   /* Keeps it at the top left */
+    top: 0;               /* Aligns to top */
+    left: 0; 
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .logo {
+        width: 15%;
+        padding-top: 28%;  /* Adjust ratio for smaller screens */
+        margin: 8px;
+    }
+}
 
+@media (max-width: 576px) {
+    .logo {
+        width: 15%;
+        padding-top: 30%;  /* Further adjust for very small screens */
+        margin: 5px;
+    }
+}
 
 body.dark-mode .logo {
     background-image: url('/assets/img/logo02.png');
@@ -174,6 +176,36 @@ body.dark-mode .logo {
     --background-color: #fff;
   }
   
+
+
+    /* Round corners for the dark mode toggle button */
+.rounded-button {
+    border-radius: 50%;
+    font-size: 40px;
+    background-color: var(--background-color);
+    color: var(--default-color);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  /* Move button below hamburger menu in mobile view */
+@media (max-width: 1199px) {
+    .rounded-button {
+    display: block;
+    height: auto; 
+    font-size: 30px;
+    padding: 30px; 
+    margin: 15px; 
+    cursor: pointer;
+   position: absolute;
+   right: 0;
+   top: 50px;
+    }
+
+   
+}
   /*--------------------------------------------------------------
   # Navigation Menu
   --------------------------------------------------------------*/
@@ -207,10 +239,10 @@ body.dark-mode .logo {
     .navmenu a,
     .navmenu a:focus {
       color: var(--default-color);
-      font-size: 15px;
+      font-size: 18px;
       padding: 0 2px;
       font-family: var(--font-space);
-      font-weight: 400;
+      font-weight: 500;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -483,8 +515,8 @@ body.dark-mode .logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--accent-color);
-    color: var(--contrast-color);
+    background: var(--default-color);
+    color: var(--background-color);
     line-height: 1;
     margin: 0 4px;
     border-radius: 50%;
@@ -927,6 +959,7 @@ body.dark-mode .logo {
     text-transform: uppercase;
     display: block;
     font-weight: 500;
+    font-size: 15px;
     font-family: var(--font-space);
   }
   
@@ -1106,31 +1139,35 @@ body.dark-mode .logo {
 
   
   .service-details .services-list {
-    background-color: var(--default-color);
+    background-color: transparent;
     padding: 10px 30px;
     border: 1px solid color-mix(in srgb, var(--background-color), transparent 90%);
     margin-bottom: 20px;
   }
   
+
+
   .service-details .services-list a {
     display: block;
     line-height: 1;
     padding: 8px 0 8px 15px;
     border-left: 3px solid color-mix(in srgb, var(--background-color), transparent 70%);
     margin: 20px 0;
-    color: color-mix(in srgb, var(--accent-color), transparent 20%);
+    color: var(--default-color);
     transition: 0.3s;
   }
   
   .service-details .services-list a.active {
-    color: var(--background-color);
-    font-weight: 700;
+    color: var(--accent-color);
+    font-weight: 600;
     border-color: var(--accent-color);
   }
   
   .service-details .services-list a:hover {
     border-color: var(--background-color);
-    color: var(--background-color);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--accent-color);
   }
   
   .service-details .services-img {
@@ -1409,10 +1446,11 @@ body.dark-mode .logo {
     background-color: var(--accent-color);
   }
 
+  /*
   .contact .php-email-form button[type=submit]:hover {
     background: color-mix(in srgb, var(--accent-color), transparent 20%);
     color: var(--contrast-color);
-  }
+  }*/
 
 
   .contact button {
@@ -1433,8 +1471,19 @@ body.dark-mode .logo {
   }
 
 
+  body.dark-mode .contact button {
+    background-color: var(--default-color);
+  }
 
+  body.dark-mode .contact button a {
+    color: var(--background-color);
+  }
 
+  body.dark-mode .contact button:hover {
+    background-color: var(--accent-color);
+  }
+
+ 
 
   .col-md-12 button {
     margin: 40px 0 0 10px;
