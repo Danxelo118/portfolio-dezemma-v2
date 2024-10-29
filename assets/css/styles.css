@@ -91,9 +91,18 @@
     text-decoration: none;
     transition: 0.3s;
   }
+
+  body.dark-mode a {
+        color: var(--dark-color);   
+  }
   
   a:hover {
     color: color-mix(in srgb, var(--accent-color), transparent 25%);
+    text-decoration: none;
+  }
+
+  body.dark-mode a:hover {
+    color: var(--dark-color);
     text-decoration: none;
   }
   
@@ -1212,6 +1221,15 @@ body.dark-mode .logo {
     color: var(--accent-color);
   }
   
+  body.dark-mode .service-details .services-list a.active {
+    color: var(--dark-color);
+    border-color: var(--dark-color);
+  }
+
+  body.dark-mode .service-details .services-list a:hover {
+    color: var(--dark-color);
+  }
+
   .service-details .services-img {
     margin-bottom: 20px;
   }
@@ -1241,12 +1259,22 @@ body.dark-mode .logo {
     display: flex;
     align-items: center;
   }
+
+  .service-details .prix {
+    color: var(--dark-color);
+  }
   
   .service-details ul i {
     font-size: 20px;
     margin-right: 8px;
     color: var(--accent-color);
   }
+
+  body.dark-mode .service-details ul i {
+    color: var(--dark-color);
+  }
+
+  
   
   /*--------------------------------------------------------------
   # Portfolio Section
