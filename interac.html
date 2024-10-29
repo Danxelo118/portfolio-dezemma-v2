@@ -40,26 +40,26 @@
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-      <a href="index.html">
-        <img src="./assets/img/logo01.png"  class="logo"></a>
-
+      <a href="index.html"> 
+     <!-- <img src="./assets/img/logo01.png"  class="logo"></a> --> 
+     <a href="index.html" class="logo" id="logo"></a>
+      
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Accueil</a></li>
           <li><a href="./assets/img/daniel-dezemma-cv.pdf">CV</a></li>
-         <li><a href="index.html#portfolio" class="active">Projets</a></li>
-          <li><a href="index.html#about">À propos</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-          <button id="dark-mode-toggle" onclick="myFunction()" class="rounded-button">
-            <i class="bi bi-moon"></i>
-          </button>
+          <li><a href="#portfolio"class="active">Projets</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        
       </nav>
-
+      <button id="dark-mode-toggle" onclick="myFunction()" class="rounded-button">
+        <i class="bi bi-brightness-low"></i>
+      </button>
     </div>
   </header>
-
   <main class="main">
 
     <!-- Page Title -->

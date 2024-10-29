@@ -50,15 +50,16 @@
   .dark-mode {
     --background-color: #000;
     --surface-color: #292929f9;
+    --dark-color: #b69121;
     --default-color: #fff;
     --contrast-color: #fff;
     --heading-color: #fff;
     --nav-color: #fff;  /* The default color of the main navmenu links */
-    --nav-hover-color: #B7B5B3; /* Applied to main navmenu links when they are hovered over or active */
+    --nav-hover-color: #b69121; /* Applied to main navmenu links when they are hovered over or active */
     --nav-mobile-background-color: #1a1a1a; /* Used as the background color for mobile navigation menu */
-    --nav-dropdown-background-color: #B7B5B3; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+    --nav-dropdown-background-color: #b69121; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
     --nav-dropdown-color: #fafafa; /* Used for navigation links of the dropdown items in the navigation menu. */
-    --nav-dropdown-hover-color: #B7B5B3;
+    --nav-dropdown-hover-color: #b69121;
   }
   
   body.dark-mode {
@@ -187,7 +188,14 @@ body.dark-mode .logo {
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
+
+  .rounded-button:hover {
+    color: var(--accent-color);
+  }
   
+  body.dark-mode .rounded-button:hover {
+    color: #b69121;
+  }
   
   /* Move button below hamburger menu in mobile view */
 @media (max-width: 1199px) {
@@ -514,8 +522,8 @@ body.dark-mode .logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--default-color);
-    color: var(--background-color);
+    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+    color: var(--default-color);
     line-height: 1;
     margin: 0 4px;
     border-radius: 50%;
@@ -526,10 +534,15 @@ body.dark-mode .logo {
   }
   
   .footer .social-links a:hover {
-    background: color-mix(in srgb, var(--accent-color), transparent 20%);
+    background-color: var(--accent-color);
     text-decoration: none;
   }
+
+  body.dark-mode .footer .social-links a:hover {
+    background: #b69121;;
+  }
   
+
   .footer .copyright {
     padding-top: 25px;
     border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
@@ -606,6 +619,10 @@ body.dark-mode .logo {
   .scroll-top:hover {
     background-color: color-mix(in srgb, var(--accent-color), transparent 5%);
     color: var(--contrast-color);
+  }
+
+  body.dark-mode .scroll-top:hover {
+    background-color: var(--dark-color);
   }
   
   .scroll-top.active {
@@ -703,8 +720,12 @@ body.dark-mode .logo {
     margin: 0;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    color: color-mix(in srgb, var(--default-color), transparent 50%);
+    color: var(--accent-color);
     position: relative;
+  }
+
+  body.dark-mode .section-title h2 {
+    color: var(--dark-color);
   }
   
   .section-title h2::after {
@@ -714,6 +735,10 @@ body.dark-mode .logo {
     display: inline-block;
     background: var(--accent-color);
     margin: 4px 10px;
+  }
+
+  body.dark-mode .section-title h2::after {
+    background: var(--dark-color);
   }
   
   .section-title div {
@@ -736,6 +761,7 @@ body.dark-mode .logo {
     min-height: 100vh;
     position: relative;
     padding: 80px 0;
+    margin-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -777,12 +803,17 @@ body.dark-mode .logo {
     color: var(--default-color);
     text-overflow: ellipsis;
     font-family: var(--font-space);
-    font-size: 50px;
+    font-size: 30px;
   }
   
   .hero p span {
     letter-spacing: 1px;
     border-bottom: 2px solid var(--accent-color);
+  }
+
+  body.dark-mode .hero p span {
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--dark-color);
   }
   
   
@@ -791,7 +822,7 @@ body.dark-mode .logo {
   }
   
   .hero .social-links a {
-    background-color: color-mix(in srgb, var(--default-color), transparent 90%);
+    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
     color: var(--default-color);
     font-size: 14px;
     width: 40px;
@@ -810,12 +841,11 @@ body.dark-mode .logo {
   }
 
   body.dark-mode .hero .social-links a {
-    background-color: var(--default-color);
-    color: var(--background-color);
+    background-color: color-mix(in srgb, var(--surface-color), transparent 50%);
   }
 
   body.dark-mode .hero .social-links a:hover {
-    background-color: var(--accent-color);
+    background-color: var(--dark-color);
   }
  
 
@@ -831,7 +861,7 @@ body.dark-mode .logo {
 
   .hero button {
     margin: 40px 0 0 10px;
-    background-color: color-mix(in srgb, var(--default-color), transparent 90%);
+    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
     border: 0;
     padding: 10px 30px;
     text-align: center;
@@ -840,15 +870,15 @@ body.dark-mode .logo {
   }
 
   body.dark-mode .hero button {
-    background-color: var(--default-color);
+    background-color: color-mix(in srgb, var(--surface-color), transparent 50%);
   }
 
   body.dark-mode .hero button a {
-    color: var(--background-color);
+    color: var(--default-color);
   }
 
   body.dark-mode .hero button:hover {
-    background-color: var(--accent-color);
+    background-color: var(--dark-color);
   }
 
   .hero button a {
@@ -857,9 +887,9 @@ body.dark-mode .logo {
     font-weight: 600;
   }
   
+  
   .hero button:hover {
     background-color: var(--accent-color);
-    color: #000;
 
   }
 
@@ -873,7 +903,12 @@ body.dark-mode .logo {
     font-weight: 700;
     font-size: 24px;
   }
-  
+
+
+  .about .img-fluid:hover {
+    transform: scale(0.9);
+  }
+
   .about .content ul {
     list-style: none;
     padding: 0;
@@ -890,10 +925,13 @@ body.dark-mode .logo {
   }
   
   .about .content ul i {
-    font-size: 16px;
+    font-size: 20px;
     margin-right: 5px;
-    color: var(--accent-color);
+    color: var(--default-color);
     line-height: 0;
+  }
+  .col-lg-6 ul li span {
+    white-space: nowrap;
   }
   
   /*--------------------------------------------------------------
@@ -1032,14 +1070,13 @@ body.dark-mode .logo {
   
 
   .interests .features-item h3 a:hover {
-    color:  var(--default-color);
     text-align: center;
     font-size: 20px;
   }
 
   
  body.dark-mode .interests .features-item h3 a:hover {
-    color:  var(--default-color);
+    color:  var(--dark-color);
     text-align: center;
     font-size: 20px;
   }
@@ -1047,6 +1084,8 @@ body.dark-mode .logo {
   body.dark-mode .interests .features-item svg {
     fill:var(--default-color);
   }
+
+
 
 
   /*--------------------------------------------------------------
@@ -1063,7 +1102,8 @@ body.dark-mode .logo {
     transition: all ease-in-out 0.3s;
     height: 100%;
   }
-  
+
+
   .services .service-item .icon {
     margin: 0 auto;
     width: 64px;
@@ -1249,8 +1289,13 @@ body.dark-mode .logo {
   
   .portfolio .portfolio-content {
     position: relative;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
     overflow: hidden;
+  }
+
+  body.dark-mode .portfolio .portfolio-content {
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+
   }
   
   .portfolio .portfolio-content img {
@@ -1326,6 +1371,35 @@ body.dark-mode .logo {
     width: 100%;
   }
   
+  .portfolio-details button {
+    transition: 0.4s;
+    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+    border-radius: 50px;
+  }
+
+
+  .portfolio-details button a {
+    color: var(--default-color);
+  }
+  .portfolio-details button i {
+    color: var(--default-color);
+  }
+
+  body.dark-mode .portfolio-details button {
+   color: var(--background-color);
+  }
+
+  body.dark-mode .portfolio-details button a {
+    color: var(--default-color);
+   }
+
+  .portfolio-details button:hover {
+    background-color: var(--accent-color);
+  }
+  body.dark-mode .portfolio-details button:hover {
+    background-color: var(--dark-color);
+  }
+
   .portfolio-details .portfolio-details-slider .swiper-pagination {
     margin-top: 20px;
     position: relative;
@@ -1340,6 +1414,10 @@ body.dark-mode .logo {
   
   .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
     background-color: var(--accent-color);
+  }
+
+  body.dark-mode .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--dark-color);
   }
   
   .portfolio-details .portfolio-info {
@@ -1390,6 +1468,7 @@ body.dark-mode .logo {
   .contact .info-item {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     padding: 20px 30px;
+    font-family: var(--font-space);
     font-size: 24px;
     display: flex;
     justify-content: center;
@@ -1399,8 +1478,8 @@ body.dark-mode .logo {
 
 
   .contact .info-item .icon {
-    color: var(--background-color);
-    background-color: var(--default-color);
+    color: var(--default-color);
+    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
     width: 56px;
     height: 56px;
     font-size: 24px;
@@ -1427,33 +1506,30 @@ body.dark-mode .logo {
   }
   
   .contact .info-item .social-links a {
-    font-size: 24px;
+    font-size: 20px;
     display: inline-block;
+    border-radius: 50%;
     line-height: 1;
     margin: 4px 6px 0 0;
     transition: 0.3s;
-    color: color-mix(in srgb, var(--default-color), transparent 5%);
+    color: var(--default-color);
+    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
   }
   
-  .contact .info-item .social-links a:hover {
-    color: var(--accent-color);
-  }
-
 
   .contact .info-item .icon:hover {
     color: var(--default-color);
     background-color: var(--accent-color);
   }
 
-  /*
-  .contact .php-email-form button[type=submit]:hover {
-    background: color-mix(in srgb, var(--accent-color), transparent 20%);
-    color: var(--contrast-color);
-  }*/
+  body.dark-mode .info-item .icon:hover {
+    background-color: var(--dark-color);
+  }
 
 
   .contact button {
     margin: 40px 0 0 10px;
+    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
     border: 0;
     padding: 10px 30px;
     text-align: center;
@@ -1461,48 +1537,21 @@ body.dark-mode .logo {
     border-radius: 50px;
   }
   .contact button a {
-    color: var(--contrast-color);
+    color: var(--default-color);
     font-size: 1em;
     font-weight: 600;
   }
   .contact button:hover {
     background-color: var(--accent-color);
   }
-
-
-  body.dark-mode .contact button {
-    background-color: var(--default-color);
-  }
-
-  body.dark-mode .contact button a {
-    color: var(--background-color);
-  }
-
+  
   body.dark-mode .contact button:hover {
-    background-color: var(--accent-color);
+    background-color: var(--dark-color);
   }
 
  
 
-  .col-md-12 button {
-    margin: 40px 0 0 10px;
-
-    background: color-mix(in srgb, var(--accent-color), transparent 70%);
-    border: 0;
-    padding: 10px 30px;
-    text-align: center;
-    transition: 0.4s;
-    border-radius: 50px;
-  }
-  .col-md-12 button a {
-    color: var(--contrast-color);
-    font-size: 1em;
-    font-weight: 600;
-  }
-  .col-md-12 button:hover {
-    background-color: var(--accent-color);
-  }
-
+  
 
   /*--------------------------------------------------------------
   # Web Section
@@ -1510,7 +1559,6 @@ body.dark-mode .logo {
 
   .img-web1 {
     scale: 0.9;
-   
     border-radius: 20px;
   }
 
