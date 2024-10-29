@@ -204,7 +204,7 @@ body.dark-mode .logo {
     height: auto; 
     font-size: 35px;
     padding: 13px; 
-    margin: 15px; 
+    margin: 0px; 
     cursor: pointer;
    position: absolute;
    right: 0;
@@ -362,7 +362,7 @@ body.dark-mode .logo {
       position: absolute;
       top: 15px;
       cursor: pointer;
-      right: 15px;
+      right: 0px;
       z-index: 1000;
       transition: color 0.3s;
     }
