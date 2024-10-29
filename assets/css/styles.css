@@ -202,8 +202,8 @@ body.dark-mode .logo {
     .rounded-button {
     display: block;
     height: auto; 
-    font-size: 30px;
-    padding: 30px; 
+    font-size: 35px;
+    padding: 13px; 
     margin: 15px; 
     cursor: pointer;
    position: absolute;
@@ -355,9 +355,9 @@ body.dark-mode .logo {
   @media (max-width: 1199px) {
     .mobile-nav-toggle {
       color: var(--nav-color);
-      font-size: 28px;
+      font-size: 35px;
       line-height: 0;
-      margin: 15px; 
+      margin: 0px; 
       text-align: center;
       position: absolute;
       top: 15px;
@@ -769,17 +769,20 @@ body.dark-mode .logo {
   }
   
   
-  .hero img {
+  body.dark-mode .hero video {
     position: absolute;
+    display: block;
     filter: grayscale(100%);
-   /*inset: 0;*/
-    /*display: block;*/
+   inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     /*z-index: 1;*/
   } 
 
+  .hero video {
+    display: none;
+  }
   
   .hero .container {
     position: relative;
