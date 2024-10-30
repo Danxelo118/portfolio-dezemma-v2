@@ -92,9 +92,6 @@
     transition: 0.3s;
   }
 
-  body.dark-mode a {
-        color: var(--dark-color);   
-  }
   
   a:hover {
     color: color-mix(in srgb, var(--accent-color), transparent 25%);
@@ -233,7 +230,8 @@ body.dark-mode .logo {
   
     .navmenu ul {
       margin: 30px;
-      padding: 10px;
+      font-weight: 700;
+      padding: 20px;
       display: flex;
       list-style: none;
       align-items: center;
@@ -686,6 +684,15 @@ body.dark-mode .logo {
     padding-left: 10px;
   }
   
+  body.dark-mode .page-title .breadcrumbs a {
+    color: var(--dark-color);
+  }
+
+  body.dark-mode .page-title li:before {
+    color: var(--dark-color);
+  }
+
+
   .page-title nav ol li+li::before {
     content: "/";
     display: inline-block;
@@ -858,6 +865,7 @@ body.dark-mode .logo {
 
   body.dark-mode .hero .social-links a:hover {
     background-color: var(--dark-color);
+    color: var(--default-color);
   }
  
 
