@@ -817,12 +817,21 @@ body.dark-mode .logo {
     
   }
   
+    
+  body.dark-mode .hero h2 {
+    color: var(--dark-color);
+  }
+
   .hero p {
     margin: 5px 0 0 0;
     color: var(--default-color);
     text-overflow: ellipsis;
     font-family: var(--font-space);
     font-size: 30px;
+  }
+  
+  body.dark-mode .hero p {
+    color: var(--dark-color);
   }
   
   .hero p span {
@@ -832,6 +841,7 @@ body.dark-mode .logo {
 
   body.dark-mode .hero p span {
     letter-spacing: 1px;
+    color: var(--dark-color);
     border-bottom: 2px solid var(--dark-color);
   }
   
